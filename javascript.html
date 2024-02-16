@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+<body>
+    <h2>Welcome to Voting age eligiblity Checker</h2>
+    <button onclick="validateAge()">
+        Age checker
+    </button>
+    <script>
+    function validateAge(age) {
+        age=prompt("Enter your age:")
+        if (age<0) {
+            alert("please enter valid positive number");
+            validateAge(age);
+        } 
+        else if(age>=18){
+            alert("You are eligible to vote");
+        }
+        else{
+            alert("your not eligible to vote");
+            validateAge(age);
+        }
+      }
+    </script>
+    </body>
+</html>
